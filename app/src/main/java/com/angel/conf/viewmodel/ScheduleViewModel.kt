@@ -1,12 +1,13 @@
 package com.angel.conf.viewmodel
 
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import com.angel.conf.model.Conferences
 import com.angel.conf.network.Callback
 import com.angel.conf.network.FirestoreService
 import java.lang.Exception
 
-class ScheduleViewModel {
+class ScheduleViewModel : ViewModel() {
     val firestoreService = FirestoreService()
     var listSchedule: MutableLiveData<List<Conferences>> = MutableLiveData()
     var isLoading = MutableLiveData<Boolean>()
