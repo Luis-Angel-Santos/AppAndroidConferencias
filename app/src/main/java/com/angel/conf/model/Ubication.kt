@@ -1,6 +1,6 @@
 package com.angel.conf.model
 
-class Ubication {
+class Ubication{
     val name = ""
     val address = ""
     val latitude = ""
