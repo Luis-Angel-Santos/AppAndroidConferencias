@@ -1,7 +1,8 @@
 package com.angel.conf.view.adapter
 
-import android.telecom.Conference
+import com.angel.conf.model.Conferences
+
 
 interface ScheduleListener {
-    fun onConferenceClicked(conference: Conference, position: Int)
+    fun onConferenceClicked(conference: Conferences, position: Int)
 }
