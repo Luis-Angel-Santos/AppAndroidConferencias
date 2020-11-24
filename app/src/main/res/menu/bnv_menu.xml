@@ -16,4 +16,5 @@
         android:id="@+id/navMapFragment"
         android:title="Ubicación"
         android:icon="@drawable/ic_location"/>
+
 </menu>
