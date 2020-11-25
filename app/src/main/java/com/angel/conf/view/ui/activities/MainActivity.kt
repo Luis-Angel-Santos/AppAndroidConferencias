@@ -5,7 +5,13 @@ import android.os.Bundle
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
 import com.angel.conf.R
+import com.angel.conf.model.Conferences
+import com.angel.conf.model.Speaker
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_main.*
+import org.json.JSONArray
+import org.json.JSONObject
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,7 +22,16 @@ class MainActivity : AppCompatActivity() {
         configNav()
     }
 
-    fun configNav(){
-        NavigationUI.setupWithNavController(btnMenu, Navigation.findNavController(this, R.id.fragContent))
+    fun configNav() {
+        NavigationUI.setupWithNavController(
+            btnMenu,
+            Navigation.findNavController(this, R.id.fragContent)
+        )
     }
+
+
+
+
+
+
 }
